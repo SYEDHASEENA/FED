@@ -1,0 +1,66 @@
+<html>
+   <head>
+   <title>Customer Registration</title>
+   </head>
+    <body align="center">
+    <h1>Customer Registration</h1>
+
+    <form name="registration"    >
+      <table>
+        <tr>
+          <td><label for="name"> User Name:</label></td>
+          <td><input type="text" maxlength="15" pattern="[A-Z a-z] " required autofocus></td>
+        </tr>
+        
+        <tr>
+          <td><label for="password">Password:</label></td>
+          <td><input type="password"  pattern="[0-9 A-Z a-z] " maxlength="15" required autofocus></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" required></td>
+          </tr>
+        
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td>Male: <input type="radio" name="gender" value="male">
+            Female: <input type="radio" name="gender" value="female">
+            Other: <input type="radio" name="gender" value="other"></td>
+        </tr>
+        <tr>
+          <td><label for="age">Age (Yrs):</label></td>
+          <td>
+            <input type="number"   >
+          </td>
+        </tr>
+        <tr>
+        <td><label for="Address">Address:</label></td>
+        <td> <textarea  rows="4" cols="20" maxlength="100" ></textarea></td>
+        </tr>
+        
+        <tr>
+            <td><label for="url">Company website:</label></td>
+            <td><input type="url" ></td>
+        </tr>
+        <tr>
+            
+        <td><label for="country">choose country:</label></td>
+        <td><select >
+        <option value="India">India</option>
+        <option value="Chaina">Chaina</option>
+        <option value="Nepal">Nepal</option> </select>
+        </td>
+        </tr>
+        <tr>
+            <td><label for="date">Date Of Journey:</label></td>
+            <td><input type="date" ></td>
+                
+        </tr>
+        <tr>
+          <td colspan="2"><input type="Submit" value="Submit" /></td> <td colspan="2"><input type="Reset" value="Reset" /></td>
+        </tr>
+      </table>
+    </form>
+
+</body>
+</html>
