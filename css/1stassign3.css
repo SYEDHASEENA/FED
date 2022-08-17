@@ -1,0 +1,30 @@
+.element{
+    border:2px solid black;
+    width:435px;
+    position:relative;
+    text-align: center;
+    box-sizing:border-box;
+    height:350px;
+    
+}
+input{
+    font-size:30px;
+    
+}
+td{
+    color:blue;
+    font-size:30px;
+}
+h3{
+    color:blue;
+}
+button{
+    padding:15px 30px;
+    border:0;
+     border-radius:28px;
+    background:blue;
+    color:white;
+    font-size:25px;
+    cursor:pointer;
+
+}

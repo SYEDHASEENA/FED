@@ -1,0 +1,32 @@
+.big{
+    
+   
+    
+        padding: 0;
+        margin:0;
+       
+       
+    
+}
+.header{
+    background-color: skyblue;
+    height:40px;
+    width:80px;
+}
+.content1{
+    background-color:yellow;
+    z-index:9px;
+}
+.content2{
+    background-color:yellow;
+}
+.content3{
+    background-color:yellow;
+}
+.content{
+    background-color:pink;
+}
+.footer{
+    background-color:skyblue;
+    line-height:40px;
+}
