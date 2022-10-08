@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Bubbling Event in Javascript
+	</title>
+    <style>
+         div {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border:1px solid black;
+        }
+        h2 {
+            color: black;
+        }
+        #grandparent {
+            background-color: white;
+            width: 300px;
+            height: 300px;
+        }
+        #parent {
+            background-color:white;
+            width: 200px;
+            height: 200px;
+        }
+        #child {
+            background-color:white;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+	<h2>Bubbling Event in Javascript</h2>
+    <div>
+    <button id="grandparent">
+       
+            <p>grand Parent</p>
+        
+	<button id="parent">
+
+		<p>Parent</p>
+	</button>
+	<button id="child">
+		
+<p>Child</p>
+
+	</button>
+	</button><br>
+</div>
+</div>
+</div>
+	<script>
+		document.getElementById(
+"child").addEventListener("click",  (e)=> {
+			alert("You clicked the Child element!");
+		}, true);
+
+        var grandpa=document.getElementById(
+"grandparent");
+grandpa.addEventListener("click", (e) => {
+			alert("You clicked the grandpaelement!");
+		}, true);
+
+		document.getElementById(
+"parent").addEventListener("click", (e)=>{
+			alert("You clicked the parent element!");
+            e.stopPropagation(); 
+		}, true);
+	</script>
+
+</body>
+
+</html>
+
