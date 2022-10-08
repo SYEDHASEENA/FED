@@ -43,10 +43,10 @@
 }
 
 .footer-content p {
-    max-width: 500px;
+    max-width: 300px;
     margin: 10px auto;
-    line-height: 1px;
-    font-size: 14px;
+    line-height: 0 px;
+    font-size: 10px;
     color: #cacdd2;
 }
 
@@ -130,7 +130,7 @@
 .aside {
     top: 100px;
  
-    background:green;
+    background:royalblue;
     position: fixed;
     top: 50;
     left: 100;
