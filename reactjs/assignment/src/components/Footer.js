@@ -5,7 +5,7 @@ const Footer = () => {
     <div>
       <div className="footer">
         <div className="footer-content">
-            <h3>My FED Blog</h3>
+           
             <h2>Syed Haseena</h2>
             <h2>20BQ1A05M6</h2>
             <p>copyright &copy;2021 <a href=" #"> My-FED-Blog</a>  </p>
