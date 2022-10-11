@@ -2,6 +2,9 @@ import React from "react";
 import Sidebar from "./Sidebar";
 import MyImage from "./image.png";
 import MyImage2 from "./image1.png";
+import Image3 from "./Screenshotoutput.png";
+import Image4 from "./Screenshotoutput2.png";
+
 
 const Main = () => {
     return (
@@ -31,13 +34,20 @@ Below example shows a valid class-based component in React:
  </p>
  <p> <img src={MyImage} height="150" width="250" alt="Class Component" />
    </p>
+   <p><span>Expected Output:</span></p>
+   <p><img src={Image4} height="150" width="250" alt="Class Component" /></p>
+
+   
    <p><span><b>Functional Components:</b> </span>Functional components are JavaScript (or ES6) functions that 
    return React elements. They’re a bit easier to understand because there isn’t as much going on as there would
     be in a class component. They can also be written as a simple JS functions or as an arrow function using ES6 
     syntax, 
    and their props are passed in as arguments (if any).Below example shows a valid Functional component in React:
    </p>
-   <p> <img src={MyImage2} height="150" width="250" alt="Class Component" /></p>
+   
+   <p> <img src={MyImage2} height="150" width="250" alt="Functional  Component" /></p>
+   <p><span>Expected Output:</span></p>
+   <p> <img src={Image3} height="150" width="250" alt="Functional  Component" /></p>
    <p>Unlike class components, functional components are stateless, which means that there are no lifecycle methods or state management. However, with React Hooks, there are provided functions 
     for us to do so, such as useState() & useEffect().</p>
    <p><span ><b>Pros of Functional Components:</b></span>
