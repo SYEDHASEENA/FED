@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>eventbubbling</title>
+</head>
+
+<body>
+    <div id="parent">
+        <button>
+            <h1>parent</h1>
+        </button>
+        <button id="child">
+            <p>Child</p>
+        </button>
+        </div>
+    </div>
+    <script>
+        document.getElementById("parent").addEventListener("click",function a(){
+            alert("parenthas clicked")},false);
+            document.getElementById("child").addEventListener("click",function a(){
+            alert("child has clicked")},false);
+    </script>
+    
+</body>
+</html>

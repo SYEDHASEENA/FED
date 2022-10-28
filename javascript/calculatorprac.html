@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calculator</title>
+    <style>
+        input[type="button"]{
+            width:100%;
+            border:none;
+            border-radius:5px
+            height=70%
+
+        }
+        .calculator{
+            width:380px;
+            height:400px;
+            padding:10px;
+            margin:auto;
+        }
+    </style>
+</head>
+<body>
+    <table  class="calculator"  align="center" style="display:grid">
+        <tr><td colspan="4"><input type="text" id="result"/></td></tr>
+        <tr>
+            <td><input type="button" value="(" onClick="display('(')"/></td>
+            <td><input type="button" value="C" onClick="clearscreen()"/></td>
+
+            <td><input type="button" value=")" onClick="display(')')"/></td>
+            <td><input type="button" value="CE" onClick="deleter()"/></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="1" onClick="display('1')"/></td>
+            <td><input type="button" value="2" onClick="display('2')"/></td>
+            <td><input type="button" value="3" onClick="display('3')"/></td>
+            <td><input type="button" value="+" onClick="display('+')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="4" onClick="display('4')"/></td>
+            <td><input type="button" value="5" onClick="display('5')"/></td>
+            <td><input type="button" value="6" onClick="display('6')"/></td>
+            <td><input type="button" value="-" onClick="display('-')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="7" onClick="display('7')"/></td>
+            <td><input type="button" value="8" onClick="display('8')"/></td>
+            <td><input type="button" value="9" onClick="display('9')"/></td>
+            <td><input type="button" value="*" onClick="display('*')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="." onClick="display('.')"/></td>
+            <td><input type="button" value="0" onClick="display('0')"/></td>
+            <td><input type="button" value="/" onClick="display('/')"/></td>
+            <td><input type="button" value="=" onClick="calculate()"/></td>
+        </tr>
+    </table>
+    <script>
+        function display(v){
+            document.getElementById("result").value+=v;
+        }
+        function clearscreen(){
+            document.getElementById("result").value="";
+        }
+        function deleter(){
+            document.getElementById("result").value= document.getElementById("result").value.slice(0,-1);
+        }
+        function calculate(){
+           var p= document.getElementById("result").value;
+           var q=eval(p);
+           document.getElementById("result").value=q;
+
+        }
+        
+
+        </script>
+</body>
+</html>
