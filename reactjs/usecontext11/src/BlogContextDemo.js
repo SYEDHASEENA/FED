@@ -1,7 +1,8 @@
 import React, {useContext} from "react";
-import {BlogContext} from './App';
 
-function BlogContextDemo() {
+import {BlogContext} from './App'
+
+export default function BlogContextDemo() {
   const binfo = useContext(BlogContext);
   return (
       <div>
@@ -11,4 +12,4 @@ function BlogContextDemo() {
   );
 }
 
-export default BlogContextDemo;
+

@@ -13,7 +13,7 @@ const blogInfo = {
   }
 };
 
-export const BlogContext  = React.createContext(blogInfo);
+export const BlogContext  = React.createContext();
 
 export default function App() {
   return (
