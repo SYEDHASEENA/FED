@@ -1,0 +1,25 @@
+import "./styles.css";
+
+function Map() {
+  var Numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  function evenNumbers(num) {
+    return num % 2 === 0;
+  }
+  const Filter = Numbers.filter(evenNumbers);
+  const Map = Filter.map((num) => <li> {num}</li>);
+  const sum = Numbers.reduce(
+    (previousValue, currentValue, index) => previousValue + currentValue,
+    0
+  );
+  return (
+    <div>
+      <h1>React Map,Filter,Reduce Example</h1>
+      <h3> Array of numbers from 1 to 10</h3>
+      <ul>{Numbers}</ul>
+      <h3>Contains only even numbers(filter) printed using map</h3>
+      <ol>{Map}</ol>
+      <h3>Sum of numbers={sum}</h3>
+    </div>
+  );
+}
+export default Map;
