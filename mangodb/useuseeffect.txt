@@ -1,0 +1,13 @@
+import {useState,useEffect} from 'react';
+function App(){
+  const [data,setData]=useState(0)
+  useEffect(()=>{ setTimeout(()=>{setData(data+1)},5000)
+  },[data]);
+  return(
+    <div>
+      <h1>My values changes {data} times</h1>
+      
+    </div>
+  )
+  }
+  export default App;
